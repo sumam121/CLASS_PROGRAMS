@@ -1,0 +1,33 @@
+/*Create a class named 'Rectangle' with two data members- length and breadth and a function to calculate the area which is 'length*breadth'. The class has three constructors which are :
+1 - having no parameter - values of both length and breadth are assigned zero.
+2 - having two numbers as parameters - the two numbers are assigned as length and breadth respectively.
+3 - having one number as parameter - both length and breadth are assigned that number.
+Now, create objects of the 'Rectangle' class having none, one and two parameters and print their areas.*/
+#include<iostream>
+using namespace std;
+class Rectangle{
+    public:
+    int len=5;
+    int breath=6;
+    public:
+    int area(){
+        cout<<"Area of the rect.\n\n"<<len*breath;
+    }
+    int area(int len,int breath){
+        cout<<"Area of the rect.\n\n"<<len*breath;
+        
+    }
+    int area(int a){
+        cout<<"Area of the rect."<<a*a;
+    }
+};
+
+
+int main(){
+    Rectangle a;
+    // int len =3;
+    // int breath = 5;
+    a.area();
+    a.area(4,5);
+    a.area(5);
+}
